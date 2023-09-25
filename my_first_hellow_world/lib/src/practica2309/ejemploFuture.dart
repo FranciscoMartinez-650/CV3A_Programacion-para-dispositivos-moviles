@@ -38,7 +38,7 @@ class _EjemploFutureState extends State<EjemploFuture> {
                 return const CircularProgressIndicator();
               default:
                 if (snapshot.hasError) {
-                  return const Text('Error');
+                  return const Text('Hubo un problema en el servidor');
                 } else if (snapshot.hasData) {
                   int data = snapshot.data!;
                   return Text(
